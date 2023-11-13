@@ -15,7 +15,7 @@ import XCTest
 @MainActor final class swiftdataTests: XCTestCase {
     let modelContainer: ModelContainer = .makeModel()
 
-    func testExample() throws {
+    func testSwiftData() throws {
         var model = SwiftDataModel()
         let exp = model.on(\.inspect) { view in
             let model = try view.actualView()
