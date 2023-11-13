@@ -35,7 +35,7 @@ If we decide to decouple business logic from the SwiftUI.View then we have to ma
 ```
 [@ViewModelify](https://github.com/sisoje/viewmodelify-swift) is just a small macro that implements boilerplate code for us:
 - wrappedValue required for DynamicProperty
-- inspect property required by ViewInspector
+- inspect property required by [ViewInspector](https://github.com/nalexn/ViewInspector)
 - dummy view protocol extension required for testing
 
 ## Testing
