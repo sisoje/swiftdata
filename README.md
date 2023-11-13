@@ -7,7 +7,7 @@ Actually MVVM was dead with the first release of SwiftUI. It was just that most 
 That way of decoupling is just moving thigs in a circle and breaking basic principles of SwiftUI.
 
 ### Apple killed the view
-We can not use any of the M**V** patterns because we dont have a view. Apple never uses the term `viewModel` because they know there is no view, they just call it a `model`. We have just a model-struct and a body-function. Both of them are just a SwiftUI.View protocol. That is not a real view.
+We can not use any of the M**V** patterns because we dont have a view. Apple never uses the term `viewModel` because they know there is no view, they just call it a `model`. We have a model-struct and a body-function. Both of them are just a SwiftUI.View protocol. That is not a real view.
 Its just some **value** that conforms to a SwiftUI.View protocol.
 
 ### Values
