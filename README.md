@@ -13,7 +13,7 @@ Its just some **value** that conforms to a SwiftUI.View protocol.
 ### Values
 Its important to note that only value type can be a SwiftUI.View and can acess environment. Thats why using observable **object** is breaking the basics of SwiftUI.
 
-### Decoupling SwiftData business logic from SwiftUI.View
+## Decoupling correctly
 If we decide to decouple business logic from the SwiftUI.View then we have to make components a value type a struct. This can be achieved using `DynamicProperty` like this:
 ```
 @ViewModelify
@@ -38,7 +38,7 @@ If we decide to decouple business logic from the SwiftUI.View then we have to ma
 - inspect callback property
 - dummy view protocol extension
 
-# Testing
+## Testing
 I use a great package [ViewInspector](https://github.com/nalexn/ViewInspector) for unit testing. Basically there is no other way to properly test models with `@State` inside. Here is a test:
 ```
 var model = SwiftDataModel()
