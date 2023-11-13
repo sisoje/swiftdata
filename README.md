@@ -34,9 +34,9 @@ If we decide to decouple business logic from the SwiftUI.View then we have to ma
 }
 ```
 [@ViewModelify](https://github.com/sisoje/viewmodelify-swift) is just a small macro that implements boilerplate code for us:
-- wrappedValue for DynamicProperty
-- inspect callback property
-- dummy view protocol extension
+- wrappedValue required for DynamicProperty
+- inspect property required by ViewInspector
+- dummy view protocol extension required for testing
 
 ## Testing
 I use a great package [ViewInspector](https://github.com/nalexn/ViewInspector) for unit testing. Basically there is no other way to properly test models with `@State` inside. Here is a test:
