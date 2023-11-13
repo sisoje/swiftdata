@@ -1,5 +1,5 @@
 # Decoupling SwiftData from the SwiftUI.View
-There is an article on [hacking with swift](https://www.hackingwithswift.com/quick-start/swiftdata/how-to-use-mvvm-to-separate-swiftdata-from-your-views). This article shows the wrong way of decoupling SwiftData from the View. As a conclusion it says:
+There is an article on [hacking with swift](https://www.hackingwithswift.com/quick-start/swiftdata/how-to-use-mvvm-to-separate-swiftdata-from-your-views) about SwiftData. This article shows the wrong way of decoupling SwiftData from the View. As a conclusion it says:
 ```
 a number of people have said outright that they think MVVM is dead with SwiftData
 ```
