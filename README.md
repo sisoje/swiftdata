@@ -1,8 +1,8 @@
 # There is no view
 There is an article on [hacking with swift](https://www.hackingwithswift.com/quick-start/swiftdata/how-to-use-mvvm-to-separate-swiftdata-from-your-views) about SwiftData. This article shows you the wrong way of separating SwiftData from the SwiftUI.View. It proves to be a failure because it does not work completely and there is a conclusion:
-```
-a number of people have said outright that they think **MVVM is dead with SwiftData**
-```
+
+> a number of people have said outright that they think **MVVM is dead with SwiftData**
+
 ### MVVM was dead with the first release of SwiftUI
 Sadly most of iOS dev community started pushing MVVM into SwiftUI, probably influenced by past experiences.
 General MVVM approach is abusing observable **objects** to decouple business logic from the SwiftUI.View.
