@@ -7,14 +7,13 @@ Actually MVVM was dead with the first release of SwiftUI. It was just that most 
 That way of decoupling is just moving thigs in a circle and breaking basic principles of SwiftUI.
 
 ### Apple killed the view
-We can not use any of the M**V** patterns because we dont have a view. Apple never uses the term `viewModel` because they know there is no view, they just call it a `model`. We have a model-struct and a body-function. Both of them are just a SwiftUI.View protocol. That is not a real view.
-Its just some **value** that conforms to a SwiftUI.View protocol.
+We can not use any of the M**V** patterns because we dont have a view. We have a model-struct and a body-function. Model conforms to SwiftUI.View and body returns a SwiftUI.View but SwiftUI.View is not a real view. SwiftUI.View has no properties of a view, no frame, no colors, no nothing... Its just a protocol. Apple never uses the term `viewModel` because they know there is no view, they just call it a `model`.
 
-### Values
-Its important to note that only value type can be a SwiftUI.View and can acess environment. Thats why using observable **object** is breaking the basics of SwiftUI.
+### Business logic and values
+Model represents the a state and then entire body **is** the business logic. SwiftUI.View is required to be a **value**-type. Only from value types you can access environment. Thats why using observable **object** is breaking the basics of SwiftUI and you should not move business logic into a class.
 
 ## Decoupling correctly
-If we decide to decouple business logic from the SwiftUI.View then we have to make components a value type a struct. This can be achieved using `DynamicProperty` like this:
+Decoupled is not always the best. But if we still decide to decouple business logic from the SwiftUI.View then we have to make components that are a value type, a struct. This can be achieved using `DynamicProperty` like this:
 ```
 @ViewModelify
 @propertyWrapper struct SwiftDataModel: DynamicProperty {
