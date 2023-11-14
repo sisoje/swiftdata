@@ -47,7 +47,7 @@ I use a great package [ViewInspector](https://github.com/nalexn/ViewInspector) f
 ```
 var model = SwiftDataModel()
 let exp = model.on(\.inspect) { view in
-    let model = try view.actualView()
+    let model = try view.actualView() // conforms to View
     XCTAssertEqual(model.items.count, 0)
     try model.addItem()
     XCTAssertEqual(model.items.count, 1)
@@ -55,8 +55,8 @@ let exp = model.on(\.inspect) { view in
     XCTAssertEqual(model.items.count, 0)
 }
 ViewHosting.host(
-    view: model.environment(\.modelContext, modelContainer.mainContext)
+    view: model.environment(\.modelContext, modelContainer.mainContext) // environment works
 )
 wait(for: [exp], timeout: 1)
 ```
-# Thank you Apple for making the SwiftData!
+# Special thanks to Apple for providing SwiftData!
