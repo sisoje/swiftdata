@@ -43,7 +43,7 @@ Decoupled is not always the best. But if we still decide to decouple business lo
 - dummy view protocol extension required for testing
 
 ## Testing
-I use a great package [ViewInspector](https://github.com/nalexn/ViewInspector) for unit testing. Basically there is no other way to properly test models with `@State` inside. Here is a test:
+I use a great package [ViewInspector](https://github.com/nalexn/ViewInspector) for unit testing. Basically there is no other way to properly test **models** with `@State` inside. Here is a test:
 ```
 var model = SwiftDataModel()
 let exp = model.on(\.inspect) { view in
