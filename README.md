@@ -15,7 +15,7 @@ Decoupling is good if plan to reuse components and test them in isolation. But w
 We can not use any of the **MV** patterns because we dont have a view. In general we have have a model (struct) and a body (function). Model conforms to SwiftUI.View and body returns a SwiftUI.View.
 
 ### Apple killed the view
-SwiftUI.View has no properties of a view, no frame, no colors, no nothing. Its just a protocol. Apple never uses the term `viewModel` because they know there is no view, they just call it a `model`.
+SwiftUI.View has no properties of a view, no frame, no colors, no nothing. Its just a protocol. Apple never uses the term `viewModel` because they know there is no view, they just use a term `model` instead.
 
 ### Business logic and values
 Model represents a state and then entire body **is** the business logic. SwiftUI.View is required to be a **value** type. Only from value types you can access environment. Thats why using observable **object** is breaking the basics of SwiftUI and you should not move business logic code into a class.
