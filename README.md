@@ -7,7 +7,7 @@ Thank you Apple for making the SwiftData!
 ### MVVM was dead with the first release of SwiftUI
 Sadly most of iOS dev community started pushing MVVM into SwiftUI, probably influenced by past experiences.
 General MVVM approach is abusing observable **objects** to decouple business logic from the SwiftUI.View.
-That way of decoupling is just moving thigs in a circle and breaking basic principles of SwiftUI.
+That way of decoupling is just moving code in a circle and breaking basic principles of SwiftUI.
 
 ### Apple killed the view
 We can not use any of the **MV** patterns because we dont have a view. We have a model-struct and a body-function. Model conforms to SwiftUI.View and body returns a SwiftUI.View.
