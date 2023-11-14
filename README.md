@@ -1,13 +1,18 @@
-# Decoupling SwiftData from the SwiftUI.View
-There is an article on [hacking with swift](https://www.hackingwithswift.com/quick-start/swiftdata/how-to-use-mvvm-to-separate-swiftdata-from-your-views) about SwiftData. This article shows the wrong way of decoupling SwiftData from the SwiftUI.View. As a conclusion it says:
+# There is no view
+There is an article on [hacking with swift](https://www.hackingwithswift.com/quick-start/swiftdata/how-to-use-mvvm-to-separate-swiftdata-from-your-views) about SwiftData. This article shows the wrong way of decoupling SwiftData from the SwiftUI.View. As a conclusion it states:
 ```
 a number of people have said outright that they think MVVM is dead with SwiftData
 ```
-Actually MVVM was dead with the first release of SwiftUI. It was just that most of community was pushing that MVVM nonsense and abusing observable **objects** to decouple business logic from the SwiftUI.View.
+### MVVM was dead with the first release of SwiftUI
+Sadly most of iOS dev community started pushing MVVM into SwiftUI, probably influenced by past experiences.
+General MVVM approach is abusing observable **objects** to decouple business logic from the SwiftUI.View.
 That way of decoupling is just moving thigs in a circle and breaking basic principles of SwiftUI.
 
 ### Apple killed the view
-We can not use any of the M**V** patterns because we dont have a view. We have a model-struct and a body-function. Model conforms to SwiftUI.View and body returns a SwiftUI.View but SwiftUI.View is not a real view. SwiftUI.View has no properties of a view, no frame, no colors, no nothing... Its just a protocol. Apple never uses the term `viewModel` because they know there is no view, they just call it a `model`.
+We can not use any of the **MV** patterns because we dont have a view. We have a model-struct and a body-function. Model conforms to SwiftUI.View and body returns a SwiftUI.View.
+
+### SwiftUI.View is not a real view
+SwiftUI.View has no properties of a view, no frame, no colors, no nothing. Its just a protocol. Apple never uses the term `viewModel` because they know there is no view, they just call it a `model`.
 
 ### Business logic and values
 Model represents the a state and then entire body **is** the business logic. SwiftUI.View is required to be a **value**-type. Only from value types you can access environment. Thats why using observable **object** is breaking the basics of SwiftUI and you should not move business logic into a class.
