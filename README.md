@@ -3,7 +3,7 @@ There is an article on [hacking with swift](https://www.hackingwithswift.com/qui
 
 > a number of people have said outright that they think **MVVM is dead with SwiftData**
 
-### MVVM was dead with the first release of SwiftUI
+### MVVM is dead with SwiftUI
 Sadly most of iOS dev community started pushing MVVM into SwiftUI, probably influenced by past experiences.
 General MVVM approach is abusing observable **objects** to decouple business logic from the SwiftUI.View.
 That way of decoupling is just moving code in a circle and breaking basic principles of SwiftUI.
