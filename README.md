@@ -9,7 +9,7 @@ General MVVM approach is abusing observable **objects** to decouple business log
 That way of decoupling is just moving code in a circle and breaking basic principles of SwiftUI.
 
 ### Decoupling is (kinda) good
-Decoupling is good if plan to reuse components and test them in isolation. But why bother testing the code that is broken by design? And when its broken by design then we can not even reuse it properly.
+Decoupling is good if plan to reuse components and test them in isolation. But why bother testing the code that is broken by design? And when its broken by design then we can not even reuse it properly. It makes a mess inside the project once again.
 
 ### SwiftUI.View is not a real view
 We can not use any of the **MV** patterns because we dont have a view. In general we have have a model (struct) and a body (function). Model conforms to SwiftUI.View and body returns a SwiftUI.View.
