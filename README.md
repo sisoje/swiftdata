@@ -9,7 +9,7 @@ General MVVM approach is abusing observable **objects** to decouple business log
 That way of decoupling is just moving code in a circle and breaking basic principles of SwiftUI.
 
 ### SwiftUI.View is not a real view
-We can not use any of the **MV** patterns because we dont have a view. We have a model-struct and a body-function. Model conforms to SwiftUI.View and body returns a SwiftUI.View.
+We can not use any of the **MV** patterns because we dont have a view. In general we have have a model (struct) and a body (function). Model conforms to SwiftUI.View and body returns a SwiftUI.View.
 
 ### Apple killed the view
 SwiftUI.View has no properties of a view, no frame, no colors, no nothing. Its just a protocol. Apple never uses the term `viewModel` because they know there is no view, they just call it a `model`.
