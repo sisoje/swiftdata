@@ -15,7 +15,7 @@ We can not use any of the **MV** patterns because we dont have a view. In genera
 SwiftUI.View has no properties of a view, no frame, no colors, no nothing. Its just a protocol. Apple never uses the term `viewModel` because they know there is no view, they just call it a `model`.
 
 ### Business logic and values
-Model represents a state and then entire body **is** the business logic. SwiftUI.View is required to be a **value** type. Only from value types you can access environment. Thats why using observable **object** is breaking the basics of SwiftUI and you should not move business logic into a class.
+Model represents a state and then entire body **is** the business logic. SwiftUI.View is required to be a **value** type. Only from value types you can access environment. Thats why using observable **object** is breaking the basics of SwiftUI and you should not move business logic code into a class.
 
 ## Decoupling correctly
 Decoupled is not always the best. But if we still decide to decouple business logic from the SwiftUI.View then we have to make components that are a value type, a struct. This can be achieved using `DynamicProperty` like this:
