@@ -45,6 +45,18 @@ Decoupled is not always the best. But if we still decide to decouple business lo
 - inspect property required by [ViewInspector](https://github.com/nalexn/ViewInspector)
 - dummy view protocol extension required for testing
 
+## Usage
+Here is example usage with a "clean view":
+```
+struct CleanView: View {
+    @SwiftDataModel var model
+    var body: some View {
+         List(model.items) { ... }
+         Button("Add item") { model.addItem() }
+    }
+}
+```
+
 ## Testing
 I use a great package [ViewInspector](https://github.com/nalexn/ViewInspector) for unit testing. Basically there is no other way to properly test **models** with `@State` inside. Here is a test:
 ```
