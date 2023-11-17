@@ -39,13 +39,13 @@ struct ContentView: View {
 
     private func addItem() {
         withAnimation {
-            try? model.addItem()
+            model.addItem()
         }
     }
 
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
-            try? model.deleteItems(offsets: offsets)
+            model.deleteItems(offsets: offsets)
         }
     }
 }

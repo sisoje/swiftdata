@@ -9,19 +9,19 @@ import ViewModelify
 import SwiftData
 import SwiftUI
 
-@ViewModelify
+@ModelifyAppear
 @propertyWrapper struct SwiftDataModel: DynamicProperty {
     @Environment(\.modelContext) private var modelContext
     @Query var items: [Item]
-    func addItem() throws {
+    func addItem() {
         let newItem = Item(timestamp: Date())
         modelContext.insert(newItem)
-        try modelContext.save()
+        try? modelContext.save()
     }
-    func deleteItems(offsets: IndexSet) throws {
+    func deleteItems(offsets: IndexSet) {
         for index in offsets {
             modelContext.delete(items[index])
         }
-        try modelContext.save()
+        try? modelContext.save()
     }
 }
