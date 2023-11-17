@@ -497,8 +497,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sisoje/viewmodelify-swift.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = exactVersion;
+				version = 1.0.0;
 			};
 		};
 		7E95C7E62B023F05005CDC71 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
