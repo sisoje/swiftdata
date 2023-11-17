@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E5805A92B081B48001C3ACE /* AppDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5805A82B081B48001C3ACE /* AppDataModel.swift */; };
 		7E95C7B52B023E56005CDC71 /* swiftdataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E95C7B42B023E56005CDC71 /* swiftdataApp.swift */; };
 		7E95C7B72B023E56005CDC71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E95C7B62B023E56005CDC71 /* ContentView.swift */; };
 		7E95C7B92B023E56005CDC71 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E95C7B82B023E56005CDC71 /* Item.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		7E5805A72B081ACF001C3ACE /* swiftdata.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = swiftdata.xctestplan; sourceTree = "<group>"; };
+		7E5805A82B081B48001C3ACE /* AppDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataModel.swift; sourceTree = "<group>"; };
 		7E95C7B12B023E56005CDC71 /* swiftdata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftdata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E95C7B42B023E56005CDC71 /* swiftdataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftdataApp.swift; sourceTree = "<group>"; };
 		7E95C7B62B023E56005CDC71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				7EFFDDD52B025FFF0075F86E /* ModelContainerExtensions.swift */,
 				7E95C7B62B023E56005CDC71 /* ContentView.swift */,
 				7E95C7E92B0240C6005CDC71 /* SwiftDataModel.swift */,
+				7E5805A82B081B48001C3ACE /* AppDataModel.swift */,
 				7E95C7B82B023E56005CDC71 /* Item.swift */,
 				7E95C7BA2B023E57005CDC71 /* Assets.xcassets */,
 				7E95C7BC2B023E57005CDC71 /* Preview Content */,
@@ -225,6 +228,7 @@
 				7E95C7B72B023E56005CDC71 /* ContentView.swift in Sources */,
 				7E95C7B92B023E56005CDC71 /* Item.swift in Sources */,
 				7E95C7B52B023E56005CDC71 /* swiftdataApp.swift in Sources */,
+				7E5805A92B081B48001C3ACE /* AppDataModel.swift in Sources */,
 				7EFFDDD62B025FFF0075F86E /* ModelContainerExtensions.swift in Sources */,
 				7E95C7EA2B0240C6005CDC71 /* SwiftDataModel.swift in Sources */,
 			);
