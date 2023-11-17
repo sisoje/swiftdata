@@ -5,19 +5,15 @@
 //  Created by Lazar Otasevic on 17.11.23..
 //
 
-import ViewModelify
-import SwiftData
 import SwiftUI
-import Combine
+import ViewModelify
 
 @ViewModelify
 @propertyWrapper struct AppDataModel: DynamicProperty {
     @AppStorage("user") var username: String = ""
     @AppStorage("host") var host: String = ""
-    
     var email: String { "\(username)@\(host)" }
 }
-
 
 struct AppDataView: View {
     @AppDataModel var model
