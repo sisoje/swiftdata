@@ -18,8 +18,10 @@ import ViewModelify
 struct AppDataView: View {
     @AppDataModel var model
     var body: some View {
-        TextField("user", text: model.$username)
-        TextField("host", text: model.$host)
-        Text("Email: \(model.email)")
+        VStack {
+            TextField("user", text: model.$username)
+            TextField("host", text: model.$host)
+            Text("Email: \(model.email)")
+        }
     }
 }
