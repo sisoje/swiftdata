@@ -19,7 +19,7 @@ extension Inspection: InspectionEmissary { }
     let modelContainer: ModelContainer = .makeModel()
     
     func testSwiftDataWithCombine() throws {
-        var model = SwiftDataModel()
+        let model = SwiftDataModel()
         let exp = model.inspection.inspect { view in
             let model = try view.actualView()
             XCTAssertEqual(model.items.count, 0)

@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "D6425439-BBB8-46F9-9852-C252DC828D51",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:swiftdata.xcodeproj",
+      "identifier" : "7E95C7B02B023E56005CDC71",
+      "name" : "swiftdata"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:swiftdata.xcodeproj",
+        "identifier" : "7E95C7C22B023E57005CDC71",
+        "name" : "swiftdataTests"
+      }
+    }
+  ],
+  "version" : 1
+}
