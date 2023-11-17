@@ -20,12 +20,12 @@ extension Inspection: InspectionEmissary { }
 
     func testSwiftData() throws {
         var model = SwiftDataModel()
-        let exp = model.on(\.inspect) { view in
+        let exp = model.on(\.didAppear) { view in
             let model = try view.actualView()
             XCTAssertEqual(model.items.count, 0)
-            try model.addItem()
+            model.addItem()
             XCTAssertEqual(model.items.count, 1)
-            try model.deleteItems(offsets: .init(integer: 0))
+            model.deleteItems(offsets: .init(integer: 0))
             XCTAssertEqual(model.items.count, 0)
         }
         ViewHosting.host(
