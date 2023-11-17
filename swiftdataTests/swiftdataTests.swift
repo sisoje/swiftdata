@@ -11,6 +11,9 @@ import SwiftUI
 import ViewInspector
 import ViewModelify
 import XCTest
+import Combine
+
+extension Inspection: InspectionEmissary { }
 
 @MainActor final class swiftdataTests: XCTestCase {
     let modelContainer: ModelContainer = .makeModel()

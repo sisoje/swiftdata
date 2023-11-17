@@ -8,8 +8,9 @@
 import ViewModelify
 import SwiftData
 import SwiftUI
+import Combine
 
-@ModelifyAppear
+@ViewModelify
 @propertyWrapper struct SwiftDataModel: DynamicProperty {
     @Environment(\.modelContext) private var modelContext
     @Query var items: [Item]
