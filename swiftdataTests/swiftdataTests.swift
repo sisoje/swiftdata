@@ -9,11 +9,8 @@ import SwiftData
 @testable import swiftdata
 import SwiftUI
 import ViewInspector
-import ViewModelify
 import XCTest
 import Combine
-
-extension Inspection: InspectionEmissary { }
 
 @MainActor final class swiftdataTests: XCTestCase {
     let modelContainer: ModelContainer = .makeModel()
@@ -36,7 +33,7 @@ extension Inspection: InspectionEmissary { }
 
     func testSwiftDataWithAppear() throws {
         var model = SwiftDataModel()
-        let exp = model.on(\.didAppear) { view in
+        let exp = model.on(\.inspection.didAppear) { view in
             let model = try view.actualView()
             XCTAssertEqual(model.items.count, 0)
             model.addItem()

@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7E5805A92B081B48001C3ACE /* AppDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5805A82B081B48001C3ACE /* AppDataModel.swift */; };
+		7E5C1ABA2B08F1B900B3FD10 /* ViewModelify in Frameworks */ = {isa = PBXBuildFile; productRef = 7E5C1AB92B08F1B900B3FD10 /* ViewModelify */; };
+		7E5C1ABC2B08F46300B3FD10 /* InspectionEmissary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5C1ABB2B08F46300B3FD10 /* InspectionEmissary.swift */; };
 		7E95C7B52B023E56005CDC71 /* swiftdataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E95C7B42B023E56005CDC71 /* swiftdataApp.swift */; };
 		7E95C7B72B023E56005CDC71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E95C7B62B023E56005CDC71 /* ContentView.swift */; };
 		7E95C7B92B023E56005CDC71 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E95C7B82B023E56005CDC71 /* Item.swift */; };
 		7E95C7BB2B023E57005CDC71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E95C7BA2B023E57005CDC71 /* Assets.xcassets */; };
 		7E95C7BE2B023E57005CDC71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E95C7BD2B023E57005CDC71 /* Preview Assets.xcassets */; };
 		7E95C7C82B023E57005CDC71 /* swiftdataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E95C7C72B023E57005CDC71 /* swiftdataTests.swift */; };
-		7E95C7E52B023EC4005CDC71 /* ViewModelify in Frameworks */ = {isa = PBXBuildFile; productRef = 7E95C7E42B023EC4005CDC71 /* ViewModelify */; };
 		7E95C7E82B023F05005CDC71 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 7E95C7E72B023F05005CDC71 /* ViewInspector */; };
 		7E95C7EA2B0240C6005CDC71 /* SwiftDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E95C7E92B0240C6005CDC71 /* SwiftDataModel.swift */; };
 		7EFFDDD62B025FFF0075F86E /* ModelContainerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFFDDD52B025FFF0075F86E /* ModelContainerExtensions.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		7E5805A72B081ACF001C3ACE /* swiftdata.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = swiftdata.xctestplan; sourceTree = "<group>"; };
 		7E5805A82B081B48001C3ACE /* AppDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataModel.swift; sourceTree = "<group>"; };
+		7E5C1ABB2B08F46300B3FD10 /* InspectionEmissary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionEmissary.swift; sourceTree = "<group>"; };
 		7E95C7B12B023E56005CDC71 /* swiftdata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftdata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E95C7B42B023E56005CDC71 /* swiftdataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftdataApp.swift; sourceTree = "<group>"; };
 		7E95C7B62B023E56005CDC71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E95C7E52B023EC4005CDC71 /* ViewModelify in Frameworks */,
+				7E5C1ABA2B08F1B900B3FD10 /* ViewModelify in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				7E95C7C72B023E57005CDC71 /* swiftdataTests.swift */,
+				7E5C1ABB2B08F46300B3FD10 /* InspectionEmissary.swift */,
 			);
 			path = swiftdataTests;
 			sourceTree = "<group>";
@@ -132,7 +135,7 @@
 			);
 			name = swiftdata;
 			packageProductDependencies = (
-				7E95C7E42B023EC4005CDC71 /* ViewModelify */,
+				7E5C1AB92B08F1B900B3FD10 /* ViewModelify */,
 			);
 			productName = swiftdata;
 			productReference = 7E95C7B12B023E56005CDC71 /* swiftdata.app */;
@@ -188,8 +191,8 @@
 			);
 			mainGroup = 7E95C7A82B023E56005CDC71;
 			packageReferences = (
-				7E95C7E32B023EC4005CDC71 /* XCRemoteSwiftPackageReference "viewmodelify-swift" */,
 				7E95C7E62B023F05005CDC71 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+				7E5C1AB82B08F1B900B3FD10 /* XCRemoteSwiftPackageReference "viewmodelify-swift" */,
 			);
 			productRefGroup = 7E95C7B22B023E56005CDC71 /* Products */;
 			projectDirPath = "";
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5C1ABC2B08F46300B3FD10 /* InspectionEmissary.swift in Sources */,
 				7E95C7C82B023E57005CDC71 /* swiftdataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,12 +503,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7E95C7E32B023EC4005CDC71 /* XCRemoteSwiftPackageReference "viewmodelify-swift" */ = {
+		7E5C1AB82B08F1B900B3FD10 /* XCRemoteSwiftPackageReference "viewmodelify-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sisoje/viewmodelify-swift.git";
 			requirement = {
 				kind = exactVersion;
-				version = 1.0.0;
+				version = 1.0.1;
 			};
 		};
 		7E95C7E62B023F05005CDC71 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
@@ -518,9 +522,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7E95C7E42B023EC4005CDC71 /* ViewModelify */ = {
+		7E5C1AB92B08F1B900B3FD10 /* ViewModelify */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7E95C7E32B023EC4005CDC71 /* XCRemoteSwiftPackageReference "viewmodelify-swift" */;
+			package = 7E5C1AB82B08F1B900B3FD10 /* XCRemoteSwiftPackageReference "viewmodelify-swift" */;
 			productName = ViewModelify;
 		};
 		7E95C7E72B023F05005CDC71 /* ViewInspector */ = {
