@@ -10,16 +10,16 @@ import ViewModelify
 
 @ViewModelify
 @propertyWrapper struct AppDataModel: DynamicProperty {
-    @AppStorage("user") var username: String = ""
+    @AppStorage("user") var user: String = ""
     @AppStorage("host") var host: String = ""
-    var email: String { "\(username)@\(host)" }
+    var email: String { "\(user)@\(host)" }
 }
 
 struct AppDataView: View {
     @AppDataModel var model
     var body: some View {
         VStack {
-            TextField("user", text: model.$username)
+            TextField("user", text: model.$user)
             TextField("host", text: model.$host)
             Text("Email: \(model.email)")
         }
